@@ -22,7 +22,7 @@ module.exports = function (trading_pairs) {
 
 
     telBot.on("start", () => {
-        send("Trader Bot started!")
+        send("Rei das Cripto Iniciado!")
     })
 
     telBot.start()
@@ -50,7 +50,7 @@ function notifyBuyToCoverTraded(signal) {
     return send(createSignalMessage("<b>>> SUCCESS! BUY_SIGNAL :: BUY TO COVER SHORT TRADE</b>", signal));
 }
 function notifyEnterLongSignal(signal) {
-    return send(createSignalMessage("<i>BUY_SIGNAL :: ENTER LONG TRADE</i>", signal));
+    return send(createSignalMessage("<i>Sinal de Compra  :: Compre Agora Estrategia  + Moeda /i>", signal));
 }
 function notifyEnterLongTraded(signal) {
     return send(createSignalMessage("<b>>> SUCCESS! BUY_SIGNAL :: ENTER LONG TRADE</b>", signal));
